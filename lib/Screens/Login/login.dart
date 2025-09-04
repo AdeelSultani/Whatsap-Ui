@@ -96,16 +96,20 @@ SizedBox(height: 50,),
                   ),
                 ),
               ),
-            SizedBox(width: 250,
-                child: TextField(
-             keyboardType: TextInputType.number,
-                controller: phonecontroller,
-               decoration :InputDecoration(
-                 enabledBorder: OutlineInputBorder(
-                   borderSide: BorderSide(color: Color(0XFF00A884))
-                 )
-               )
-              )
+            SizedBox(width: 10,),
+            SizedBox(width: 180,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 5),
+                  child: TextField(
+                               keyboardType: TextInputType.number,
+                  controller: phonecontroller,
+                                 decoration :InputDecoration(
+                     enabledBorder: UnderlineInputBorder(
+                         borderSide: BorderSide(color: Color(0XFF00A884))
+                     )
+                                 )
+                                ),
+                )
               )
 
             ],
